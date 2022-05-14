@@ -2,7 +2,7 @@
     "name": "monotropic-theme",
     "version": "2.24.2",
     "displayName": "monotropic",
-    "homepage": "https://github.com/avelino/monotropic-theme",
+    "homepage": "https://github.com/avelino/monotropic-theme-vscode",
     "description": "(Almost) monochromatic theme for vscode",
     "publisher": "monotropic-theme",
     "license": "MIT",
@@ -21,10 +21,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/avelino/monotropic-theme.git"
+        "url": "https://github.com/avelino/monotropic-theme-vscode.git"
     },
     "bugs": {
-        "url": "https://github.com/avelino/monotropic-theme/issues"
+        "url": "https://github.com/avelino/monotropic-theme-vscode/issues"
     },
     "engines": {
         "vscode": "^1.13.0"
