@@ -1,0 +1,65 @@
+{
+    "name": "monotropic-theme",
+    "version": "2.24.2",
+    "displayName": "monotropic",
+    "homepage": "https://github.com/avelino/monotropic-theme",
+    "description": "(Almost) monochromatic theme for vscode",
+    "publisher": "monotropic-theme",
+    "license": "MIT",
+    "scripts": {
+        "build": "node ./scripts/build.js",
+        "lint": "node ./scripts/lint.js",
+        "package": "vsce package -o ./bin/monotropic.vsix",
+        "vscode:prepublish": "npm run build",
+        "vsce-publish": "vsce publish"
+    },
+    "maintainers": [
+        "Thiago Avelino <avelinorun@gmail.com>"
+    ],
+    "contributors": [
+        "Rodrigo Franco"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/avelino/monotropic-theme.git"
+    },
+    "bugs": {
+        "url": "https://github.com/avelino/monotropic-theme/issues"
+    },
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "monotropic",
+        "monochorme",
+        "light",
+        "theme",
+        "color-theme"
+    ],
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#fffffa",
+        "theme": "light"
+    },
+    "contributes": {
+        "themes": [{
+            "label": "monotropic",
+            "uiTheme": "vs",
+            "path": "./theme/monotropic.json"
+        }]
+    },
+    "devDependencies": {
+        "js-yaml": "^4.1.0",
+        "prettier": "^2.6.2",
+        "tinycolor2": "^1.4.2",
+        "vsce": "^2.7.0"
+    },
+    "__metadata": {
+        "id": "",
+        "publisherDisplayName": "monotropic",
+        "publisherId": ""
+    }
+}
