@@ -4,6 +4,8 @@
 
 (Almost) monochromatic theme for VSCode. Originally based on [caffo/monotropic-theme](https://github.com/caffo/monotropic-theme) (emacs).
 
+[Install now 🛒](https://marketplace.visualstudio.com/items?itemName=avelino.monotropic-theme)
+
 ## Screenshots
 
 ![markdown](./assets/markdown.png)
