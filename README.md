@@ -1,5 +1,7 @@
 # monotropic for Visual Studio Code
 
+<a href="https://github.com/avelino/monotropic-theme-vscode"><img align="right" src="https://github.com/avelino/monotropic-theme-vscode/raw/main/assets/monotropic.png" alt="monotropic" title="monotropic" /></a>
+
 (Almost) monochromatic theme for VSCode. Originally based on [caffo/monotropic-theme](https://github.com/caffo/monotropic-theme) (emacs).
 
 ## Screenshots

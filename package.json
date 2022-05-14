@@ -39,7 +39,7 @@
         "theme",
         "color-theme"
     ],
-    "icon": "icon.png",
+    "icon": "./assets/monotropic.png",
     "galleryBanner": {
         "color": "#fffffa",
         "theme": "light"
