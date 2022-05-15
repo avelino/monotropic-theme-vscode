@@ -8,12 +8,16 @@
 
 ## Screenshots
 
+### markdown
 ![markdown](./assets/markdown.png)
 
+### clojure
 ![clojure](./assets/clojure.png)
 
+### go 
 ![golang](./assets/golang.png)
 
+### javascript 
 ![javascript](./assets/js.png)
 
 Font used in screenshots is [Cascadia Code](https://github.com/microsoft/cascadia-code)
