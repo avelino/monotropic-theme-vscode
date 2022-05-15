@@ -1,6 +1,6 @@
 {
     "name": "monotropic-theme",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "displayName": "monotropic",
     "homepage": "https://github.com/avelino/monotropic-theme-vscode",
     "description": "(Almost) monochromatic theme for vscode",
@@ -9,7 +9,7 @@
     "scripts": {
         "build": "node ./scripts/build.js",
         "lint": "node ./scripts/lint.js",
-        "package": "vsce package -o ./bin/monotropic.vsix",
+        "package": "mkdir -p bin && vsce package -o ./bin/monotropic.vsix",
         "vscode:prepublish": "npm run build",
         "vsce-publish": "vsce publish"
     },
@@ -58,7 +58,6 @@
         "vsce": "^2.7.0"
     },
     "__metadata": {
-        "id": "",
         "publisherDisplayName": "avelino",
         "publisherId": "0fd79b68-27dc-647c-802d-f756973dc0a5"
     }
