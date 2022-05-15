@@ -1,6 +1,6 @@
 {
     "name": "monotropic-theme",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "displayName": "monotropic",
     "homepage": "https://github.com/avelino/monotropic-theme-vscode",
     "description": "(Almost) monochromatic theme for vscode",
@@ -58,7 +58,8 @@
         "vsce": "^2.7.0"
     },
     "__metadata": {
+        "id": "e9a92eb4-ebc4-455e-9a80-a9666d03ee86",
         "publisherDisplayName": "avelino",
-        "publisherId": "0fd79b68-27dc-647c-802d-f756973dc0a5"
+        "publisherId": "6c7da285-e398-41d7-a76c-9e13c3c5e16e"
     }
 }

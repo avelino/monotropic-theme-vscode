@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- fix the build that generates the theme json
+
 ## 0.1.2
 
 - automate build and publishing in the marketplace
