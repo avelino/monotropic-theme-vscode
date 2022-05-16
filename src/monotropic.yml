@@ -47,6 +47,48 @@ monotropic:
     - &BGLight       '#fffffa'
     - &BGDark        '#fffffa'
     - &BGDarker      '#fffffa'
+monotropicCoffee:
+  base:
+    - &BG        '#fffffa'
+    - &FG        '#593e2c'
+    - &SELECTION '#fcfaf0'
+    - &COMMENT   '#6f4d37'
+    - &CYAN      '#593e2c'
+    - &GREEN     '#593e2c'
+    - &ORANGE    '#593e2c'
+    - &PINK      '#473223'
+    - &PURPLE    '#593e2c'
+    - &RED       '#593e2c'
+    - &YELLOW    '#593e2c'
+  ansi:
+    - &COLOR0        '#593e2c'
+    - &COLOR1        '#593e2c'
+    - &COLOR2        '#593e2c'
+    - &COLOR3        '#593e2c'
+    - &COLOR4        '#593e2c'
+    - &COLOR5        '#593e2c'
+    - &COLOR6        '#593e2c'
+    - &COLOR7        '#593e2c'
+    - &COLOR8        '#593e2c'
+    - &COLOR9        '#593e2c'
+    - &COLOR10       '#593e2c'
+    - &COLOR11       '#593e2c'
+    - &COLOR12       '#593e2c'
+    - &COLOR13       '#593e2c'
+    - &COLOR14       '#593e2c'
+    - &COLOR15       '#593e2c'
+  brightOther:
+    - &TEMP_QUOTES          '#473223'
+  other:
+    - &LineHighlight '#fcfaf0'
+    - &NonText       '#fffffa'
+    - &WHITE         '#fffffa'
+    - &TAB_DROP_BG   '#8b6045'
+    # UI Variants
+    - &BGLighter     '#fffffa'
+    - &BGLight       '#fffffa'
+    - &BGDark        '#fffffa'
+    - &BGDarker      '#fffffa'
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:
