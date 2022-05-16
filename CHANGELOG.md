@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.4
+
+- merge property "quotes (temporary vscode fix)"
+- do not version theme file (json)
+    > it will be generated in the build to avoid keeping outdated version in the response
+
 ## 0.1.3
 
 - fix the build that generates the theme json
