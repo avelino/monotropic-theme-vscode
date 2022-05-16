@@ -9,12 +9,16 @@ if (!fs.existsSync(THEME_DIR)) {
 }
 
 module.exports = async() => {
-    const base = await generate();
+    const { base, coffee } = await generate();
     return Promise.all([
         fs.promises.writeFile(
             path.join(THEME_DIR, 'monotropic.json'),
             JSON.stringify(base, null, 4)
-        )
+        ),
+        fs.promises.writeFile(
+            path.join(THEME_DIR, 'monotropic-coffee.json'),
+            JSON.stringify(coffee, null, 4)
+        ),
     ]);
 };
 
