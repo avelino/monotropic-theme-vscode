@@ -351,6 +351,10 @@ colors:
   # Debug
   debugToolBar.background: *BGDark                                              # Debug toolbar background color
 
+  # Text Colors
+  textLink.foreground: *FG                                                      # Foreground color for links in text.
+  textLink.activeForeground: *FG                                                # Foreground color for links in text when clicked on and on mouse hover.
+
   # Welcome Page
   welcomePage.buttonBackground:                                                 # Background color for the buttons on the Welcome page
   welcomePage.buttonHoverBackground:                                            # Hover background color for the buttons on the Welcome page

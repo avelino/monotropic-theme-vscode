@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5
+
+- `textLink.foreground`: change from blue to monochromatic color
+
 ## 0.1.4
 
 - merge property "quotes (temporary vscode fix)"
