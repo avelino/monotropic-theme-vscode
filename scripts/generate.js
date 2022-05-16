@@ -29,6 +29,29 @@ const withAlphaType = new Type('!alpha', {
 });
 
 const schema = DEFAULT_SCHEMA.extend([withAlphaType]);
+/**
+ * Theme variant transform.
+ * @type {ThemeTransform}
+ */
+const transformTheme = (theme, name) => {
+    /** @type {Theme} */
+    const soft = JSON.parse(JSON.stringify(theme));
+    const brightColors = [...soft[name].ansi, ...soft[name].brightOther];
+    for (const key of Object.keys(soft.colors)) {
+        if (brightColors.includes(soft.colors[key])) {
+            soft.colors[key] = tinycolor(soft.colors[key])
+                .desaturate(20)
+                .toHexString();
+        }
+    }
+    soft.tokenColors = soft.tokenColors.map((value) => {
+        if (brightColors.includes(value.settings.foreground)) {
+            value.settings.foreground = tinycolor(value.settings.foreground).desaturate(20).toHexString();
+        }
+        return value;
+    })
+    return soft;
+};
 
 module.exports = async() => {
     const yamlFile = await readFile(
@@ -43,5 +66,8 @@ module.exports = async() => {
             delete base.colors[key];
         }
     }
-    return base
+    return {
+        base,
+        coffee: transformTheme(base, "monotropicCoffee")
+    }
 };
