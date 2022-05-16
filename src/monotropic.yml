@@ -36,9 +36,7 @@ monotropic:
     - &COLOR14       '#111111'
     - &COLOR15       '#111111'
   brightOther:
-    # Temporary (awaiting fix)
     - &TEMP_QUOTES          '#808080'
-    - &TEMP_PROPERTY_QUOTES '#808080'
   other:
     - &LineHighlight '#fcfaf0'
     - &NonText       '#fffffa'
@@ -46,9 +44,9 @@ monotropic:
     - &TAB_DROP_BG   '#ddddda'
     # UI Variants
     - &BGLighter     '#fffffa'
-    - &BGLight       '#fffffa' # HSV (230   , 25.71, 27.45)
-    - &BGDark        '#fffffa' # HSV (234.55, 25   , 17.25)
-    - &BGDarker      '#fffffa' # HSV (234.55, 25   , 13   )
+    - &BGLight       '#fffffa'
+    - &BGDark        '#fffffa'
+    - &BGDarker      '#fffffa'
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:
@@ -984,16 +982,11 @@ tokenColors:
     # See (https://github.com/Microsoft/vscode/issues/4795)
     - punctuation.definition.string.begin
     - punctuation.definition.string.end
-    settings:
-      foreground: *TEMP_QUOTES
-
-  - name: Property quotes (temporary vscode fix)
-    scope:
-    # NOTE: Same as above
     - punctuation.support.type.property-name.begin
     - punctuation.support.type.property-name.end
     settings:
-      foreground: *TEMP_PROPERTY_QUOTES
+      fontStyle: italic
+      foreground: *TEMP_QUOTES
 
   - name: Docstrings
     scope:
@@ -1002,6 +995,7 @@ tokenColors:
     - string.quoted.docstring.multi.python punctuation.definition.string.end
     - string.quoted.docstring.multi.python constant.character.escape
     settings:
+      fontStyle: italic
       foreground: *COMMENT
 
 # =============================================================================
