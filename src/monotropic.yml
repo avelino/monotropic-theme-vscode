@@ -51,15 +51,15 @@ monotropicCoffee:
   base:
     - &BG        '#fffffa'
     - &FG        '#593e2c'
-    - &SELECTION '#fcfaf0'
-    - &COMMENT   '#6f4d37'
+    - &SELECTION '#e2dcd8'
+    - &COMMENT   '#aa998e'
     - &CYAN      '#593e2c'
-    - &GREEN     '#593e2c'
-    - &ORANGE    '#593e2c'
-    - &PINK      '#473223'
+    - &GREEN     '#745b4b'
+    - &ORANGE    '#8f796c'
+    - &PINK      '#aa998e'
     - &PURPLE    '#593e2c'
     - &RED       '#593e2c'
-    - &YELLOW    '#593e2c'
+    - &YELLOW    '#c6bab3'
   ansi:
     - &COLOR0        '#593e2c'
     - &COLOR1        '#593e2c'
@@ -80,7 +80,7 @@ monotropicCoffee:
   brightOther:
     - &TEMP_QUOTES          '#473223'
   other:
-    - &LineHighlight '#fcfaf0'
+    - &LineHighlight '#e2dcd8'
     - &NonText       '#fffffa'
     - &WHITE         '#fffffa'
     - &TAB_DROP_BG   '#8b6045'
