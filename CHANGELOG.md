@@ -3,12 +3,12 @@
 ## 0.2.0
 
 - Monotropic Coffee using the degrade palette (Tints and Shades)
-  - `#593e2c` ![593e2c](https://via.placeholder.com/25/593e2c/593e2c)
-  - `#745b4b` ![745b4b](https://via.placeholder.com/25/745b4b/745b4b)
-  - `#8f796c` ![8f796c](https://via.placeholder.com/25/8f796c/8f796c)
-  - `#aa998e` ![aa998e](https://via.placeholder.com/25/aa998e/aa998e)
-  - `#c6bab3` ![c6bab3](https://via.placeholder.com/25/c6bab3/c6bab3)
-  - `#e2dcd8` ![e2dcd8](https://via.placeholder.com/25/e2dcd8/e2dcd8)
+  - `#593e2c` ![593e2c](https://dummyimage.com/25/593e2c/593e2c)
+  - `#745b4b` ![745b4b](https://dummyimage.com/25/745b4b/745b4b)
+  - `#8f796c` ![8f796c](https://dummyimage.com/25/8f796c/8f796c)
+  - `#aa998e` ![aa998e](https://dummyimage.com/25/aa998e/aa998e)
+  - `#c6bab3` ![c6bab3](https://dummyimage.com/25/c6bab3/c6bab3)
+  - `#e2dcd8` ![e2dcd8](https://dummyimage.com/25/e2dcd8/e2dcd8)
 - **Color palette** used in the themes in README
 
 ## 0.1.6
