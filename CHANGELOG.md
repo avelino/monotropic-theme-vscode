@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.6
+
+- Coffee ☕️ theme colors 
+
 ## 0.1.5
 
 - `textLink.foreground`: change from blue to monochromatic color
