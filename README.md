@@ -28,6 +28,15 @@ _Font used in screenshots is [Cascadia Code](https://github.com/microsoft/cascad
 - `#fcfaf0` ![fcfaf0](https://dummyimage.com/50/fcfaf0/fcfaf0)
 - `#fffffa` ![fffffa](https://dummyimage.com/25/fffffa/fffffa)
 
+### Gradient
+
+- `#111111` ![593e2c](https://dummyimage.com/50/111111/111111)
+- `#606060` ![745b4b](https://dummyimage.com/50/606060/606060)
+- `#b0b0b0` ![8f796c](https://dummyimage.com/50/b0b0b0/b0b0b0)
+- `#d7d7d7` ![aa998e](https://dummyimage.com/50/d7d7d7/d7d7d7)
+- `#fcfaf0` ![c6bab3](https://dummyimage.com/50/c6bab3/c6bab3)
+- `#fffffa` ![e2dcd8](https://dummyimage.com/50/e2dcd8/e2dcd8)
+
 ### Coffee
 
 - `#593e2c` ![593e2c](https://dummyimage.com/50/593e2c/593e2c)
