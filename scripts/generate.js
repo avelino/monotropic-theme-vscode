@@ -1,4 +1,4 @@
-const { readFile } = require('fs').promises;
+const fs = require('fs');
 const { join } = require('path');
 const { Type, DEFAULT_SCHEMA, load } = require('js-yaml');
 const tinycolor = require('tinycolor2');
@@ -19,55 +19,50 @@ const tinycolor = require('tinycolor2');
  */
 
 /**
- * @typedef {(yamlObj: Theme) => Theme} ThemeTransform
+ * @typedef {(yamlObj: Theme) => Theme} ThemeMaker
  */
-
 const withAlphaType = new Type('!alpha', {
     kind: 'sequence',
     construct: ([hexRGB, alpha]) => hexRGB + alpha,
     represent: ([hexRGB, alpha]) => hexRGB + alpha,
 });
-
 const schema = DEFAULT_SCHEMA.extend([withAlphaType]);
+
 /**
- * Theme variant transform.
- * @type {ThemeTransform}
+ * Merge yaml files based on list and load into yaml object.
+ * @type {ThemeMaker}
  */
-const transformTheme = (theme, name) => {
-    /** @type {Theme} */
-    const soft = JSON.parse(JSON.stringify(theme));
-    const brightColors = [...soft[name].ansi, ...soft[name].brightOther];
-    for (const key of Object.keys(soft.colors)) {
-        if (brightColors.includes(soft.colors[key])) {
-            soft.colors[key] = tinycolor(soft.colors[key])
-                .desaturate(20)
-                .toHexString();
+const mergeYaml = filesArray => {
+    var merged = "";
+    filesArray.forEach(function(file) {
+        merged += fs.readFileSync(file, 'utf8');
+    });
+    console.log(merged)
+    return load(merged, { schema });
+};
+
+/**
+ * Theme variant make.
+ * @type {ThemeMaker}
+ */
+const makeTheme = name => {
+    // merge yaml files
+    const theme = mergeYaml([
+        join(__dirname, '..', 'src', name + '.yml'),
+        join(__dirname, '..', 'src', 'monotropic.yml')
+    ]);
+    // Remove nulls and other falsey values from colors
+    for (const key of Object.keys(theme.colors)) {
+        if (!theme.colors[key]) {
+            delete theme.colors[key];
         }
     }
-    soft.tokenColors = soft.tokenColors.map((value) => {
-        if (brightColors.includes(value.settings.foreground)) {
-            value.settings.foreground = tinycolor(value.settings.foreground).desaturate(20).toHexString();
-        }
-        return value;
-    })
-    return soft;
+    return theme;
 };
 
 module.exports = async() => {
-    const yamlFile = await readFile(
-        join(__dirname, '..', 'src', 'monotropic.yml'),
-        'utf-8'
-    );
-    /** @type {Theme} */
-    const base = load(yamlFile, { schema });
-    // Remove nulls and other falsey values from colors
-    for (const key of Object.keys(base.colors)) {
-        if (!base.colors[key]) {
-            delete base.colors[key];
-        }
-    }
     return {
-        base,
-        coffee: transformTheme(base, "monotropicCoffee")
+        base: makeTheme("base"),
+        coffee: makeTheme("coffee")
     }
 };
