@@ -9,17 +9,18 @@ if (!fs.existsSync(THEME_DIR)) {
 }
 
 module.exports = async() => {
-    const { base, coffee } = await generate();
-    return Promise.all([
-        fs.promises.writeFile(
-            path.join(THEME_DIR, 'monotropic.json'),
-            JSON.stringify(base, null, 2)
-        ),
-        fs.promises.writeFile(
-            path.join(THEME_DIR, 'monotropic-coffee.json'),
-            JSON.stringify(coffee, null, 2)
-        ),
-    ]);
+    const themes = await generate();
+    var allThemes = [];
+    for (const theme of Object.keys(themes)) {
+        const themeName = 'monotropic' +
+            (theme != 'base' ? '-' + theme : '') +
+            '.json';
+        allThemes.push(fs.promises.writeFile(
+            path.join(THEME_DIR, themeName),
+            JSON.stringify(themes[theme], null, 2)
+        ))
+    }
+    return Promise.all(allThemes);
 };
 
 if (require.main === module) {
