@@ -37,7 +37,6 @@ const mergeYaml = filesArray => {
     filesArray.forEach(function(file) {
         merged += fs.readFileSync(file, 'utf8');
     });
-    console.log(merged)
     return load(merged, { schema });
 };
 
@@ -63,6 +62,7 @@ const makeTheme = name => {
 module.exports = async() => {
     return {
         base: makeTheme("base"),
-        coffee: makeTheme("coffee")
+        coffee: makeTheme("coffee"),
+        gradient: makeTheme("gradient")
     }
 };
