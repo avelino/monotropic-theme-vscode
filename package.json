@@ -54,6 +54,11 @@
                 "label": "monotropic-coffee",
                 "uiTheme": "vs",
                 "path": "./theme/monotropic-coffee.json"
+            },
+            {
+                "label": "monotropic-gradient",
+                "uiTheme": "vs",
+                "path": "./theme/monotropic-gradient.json"
             }
         ]
     },
