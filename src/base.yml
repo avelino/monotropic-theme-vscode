@@ -29,7 +29,7 @@ monotropic:
     - &COLOR14       '#111111'
     - &COLOR15       '#111111'
   brightOther:
-    - &TEMP_QUOTES          '#808080'
+    - &TEMP_QUOTES '#808080'
   other:
     - &LineHighlight '#fcfaf0'
     - &NonText       '#fffffa'
