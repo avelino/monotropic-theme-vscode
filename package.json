@@ -1,6 +1,6 @@
 {
     "name": "monotropic-theme",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "displayName": "monotropic",
     "homepage": "https://github.com/avelino/monotropic-theme-vscode",
     "description": "(Almost) monochromatic theme for vscode",
@@ -46,14 +46,16 @@
     },
     "contributes": {
         "themes": [{
-            "label": "monotropic",
-            "uiTheme": "vs",
-            "path": "./theme/monotropic.json"
-        }, {
-            "label": "monotropic-coffee",
-            "uiTheme": "vs",
-            "path": "./theme/monotropic-coffee.json"
-        }]
+                "label": "monotropic",
+                "uiTheme": "vs",
+                "path": "./theme/monotropic.json"
+            },
+            {
+                "label": "monotropic-coffee",
+                "uiTheme": "vs",
+                "path": "./theme/monotropic-coffee.json"
+            }
+        ]
     },
     "devDependencies": {
         "js-yaml": "^4.1.0",

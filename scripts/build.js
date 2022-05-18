@@ -13,11 +13,11 @@ module.exports = async() => {
     return Promise.all([
         fs.promises.writeFile(
             path.join(THEME_DIR, 'monotropic.json'),
-            JSON.stringify(base, null, 4)
+            JSON.stringify(base, null, 2)
         ),
         fs.promises.writeFile(
             path.join(THEME_DIR, 'monotropic-coffee.json'),
-            JSON.stringify(coffee, null, 4)
+            JSON.stringify(coffee, null, 2)
         ),
     ]);
 };

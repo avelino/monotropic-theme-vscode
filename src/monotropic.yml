@@ -5,90 +5,6 @@ maintainers:
   - Avelino <avelinorun@gmail.com>
 semanticClass: theme.monotropic
 semanticHighlighting: true
-monotropic:
-  base:
-    - &BG        '#fffffa'
-    - &FG        '#111111'
-    - &SELECTION '#fcfaf0'
-    - &COMMENT   '#ddddda'
-    - &CYAN      '#111111'
-    - &GREEN     '#111111'
-    - &ORANGE    '#111111'
-    - &PINK      '#808080'
-    - &PURPLE    '#111111'
-    - &RED       '#111111'
-    - &YELLOW    '#111111'
-  ansi:
-    - &COLOR0        '#111111'
-    - &COLOR1        '#111111'
-    - &COLOR2        '#111111'
-    - &COLOR3        '#111111'
-    - &COLOR4        '#111111'
-    - &COLOR5        '#111111'
-    - &COLOR6        '#111111'
-    - &COLOR7        '#111111'
-    - &COLOR8        '#111111'
-    - &COLOR9        '#111111'
-    - &COLOR10       '#111111'
-    - &COLOR11       '#111111'
-    - &COLOR12       '#111111'
-    - &COLOR13       '#111111'
-    - &COLOR14       '#111111'
-    - &COLOR15       '#111111'
-  brightOther:
-    - &TEMP_QUOTES          '#808080'
-  other:
-    - &LineHighlight '#fcfaf0'
-    - &NonText       '#fffffa'
-    - &WHITE         '#fffffa'
-    - &TAB_DROP_BG   '#ddddda'
-    # UI Variants
-    - &BGLighter     '#fffffa'
-    - &BGLight       '#fffffa'
-    - &BGDark        '#fffffa'
-    - &BGDarker      '#fffffa'
-monotropicCoffee:
-  base:
-    - &BG        '#fffffa'
-    - &FG        '#593e2c'
-    - &SELECTION '#e2dcd8'
-    - &COMMENT   '#aa998e'
-    - &CYAN      '#593e2c'
-    - &GREEN     '#745b4b'
-    - &ORANGE    '#8f796c'
-    - &PINK      '#aa998e'
-    - &PURPLE    '#593e2c'
-    - &RED       '#593e2c'
-    - &YELLOW    '#c6bab3'
-  ansi:
-    - &COLOR0        '#593e2c'
-    - &COLOR1        '#593e2c'
-    - &COLOR2        '#593e2c'
-    - &COLOR3        '#593e2c'
-    - &COLOR4        '#593e2c'
-    - &COLOR5        '#593e2c'
-    - &COLOR6        '#593e2c'
-    - &COLOR7        '#593e2c'
-    - &COLOR8        '#593e2c'
-    - &COLOR9        '#593e2c'
-    - &COLOR10       '#593e2c'
-    - &COLOR11       '#593e2c'
-    - &COLOR12       '#593e2c'
-    - &COLOR13       '#593e2c'
-    - &COLOR14       '#593e2c'
-    - &COLOR15       '#593e2c'
-  brightOther:
-    - &TEMP_QUOTES          '#473223'
-  other:
-    - &LineHighlight '#e2dcd8'
-    - &NonText       '#fffffa'
-    - &WHITE         '#fffffa'
-    - &TAB_DROP_BG   '#8b6045'
-    # UI Variants
-    - &BGLighter     '#fffffa'
-    - &BGLight       '#fffffa'
-    - &BGDark        '#fffffa'
-    - &BGDarker      '#fffffa'
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:
@@ -394,8 +310,9 @@ colors:
   debugToolBar.background: *BGDark                                              # Debug toolbar background color
 
   # Text Colors
-  textLink.foreground: *FG                                                      # Foreground color for links in text.
-  textLink.activeForeground: *FG                                                # Foreground color for links in text when clicked on and on mouse hover.
+  textLink.foreground: *FG                                                      # Foreground color for links in text
+  textLink.activeForeground: *FG                                                # Foreground color for links in text when clicked on and on mouse hover
+  textBlockQuote.textBlockQuote: *COMMENT                                       # Border color for block quotes in text
 
   # Welcome Page
   welcomePage.buttonBackground:                                                 # Background color for the buttons on the Welcome page
