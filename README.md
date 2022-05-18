@@ -12,6 +12,10 @@
 
 ![monotropic](./assets/screenshot-monotropic.png)
 
+### monotropic gradient
+
+![monotropic-coffee](./assets/screenshot-gradient.png)
+
 ### monotropic coffee
 
 ![monotropic-coffee](./assets/screenshot-coffee.png)
