@@ -313,6 +313,9 @@ colors:
   textLink.foreground: *FG                                                      # Foreground color for links in text
   textLink.activeForeground: *FG                                                # Foreground color for links in text when clicked on and on mouse hover
   textBlockQuote.textBlockQuote: *COMMENT                                       # Border color for block quotes in text
+  textCodeBlock.background: *SELECTION                                          # Background color for code blocks in text
+  textBlockQuote.background: *SELECTION                                         # Background color for block quotes in text
+  textBlockQuote.border:                                                        # Border color for block quotes in text
 
   # Welcome Page
   welcomePage.buttonBackground:                                                 # Background color for the buttons on the Welcome page

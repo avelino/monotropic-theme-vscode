@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.2
+
+[text color](https://code.visualstudio.com/api/references/theme-color#text-colors) improvements:
+
+- set `textCodeBlock.background`
+- set `textBlockQuote.background`
+- set `textBlockQuote.border`
+
 ## 0.2.1
 
 - Isolate color variables from each theme
