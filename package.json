@@ -7,9 +7,9 @@
     "publisher": "avelino",
     "license": "MIT",
     "scripts": {
-        "build": "nbb ./scripts/generate.cljs",
+        "build": "nbb -m scripts.generate",
         "package": "mkdir -p bin && vsce package -o ./bin/monotropic.vsix",
-        "vscode:prepublish": "nbb ./scripts/generate.cljs",
+        "vscode:prepublish": "nbb -m scripts.generate",
         "vsce-publish": "vsce publish"
     },
     "maintainers": [
