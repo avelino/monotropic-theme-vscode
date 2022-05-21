@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3
+
+- Migrate theme generate from JavaScript to Clojure, thanks [@borkdude](https://github.com/borkdude) for creating and maintaining [nbb](https://github.com/babashka/nbb) ❤️
+
 ## 0.2.2
 
 [text color](https://code.visualstudio.com/api/references/theme-color#text-colors) improvements:
