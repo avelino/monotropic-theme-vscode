@@ -2,3 +2,6 @@ node_modules
 *.vsix
 target
 theme/*.json
+.cache
+.calva/
+.nrepl-*
