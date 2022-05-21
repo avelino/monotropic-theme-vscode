@@ -44,8 +44,7 @@
 (defn -main
   "Software starting point"
   [& args]
-  (let [themes (list "base" "coffee" "gradient")]
-    (doseq [theme themes]
-      (if (= theme "base")
-        (write-theme-json theme "theme/monotropic.json")
-        (write-theme-json theme (str "theme/monotropic-" theme ".json"))))))
+  (doseq [theme (list "base" "coffee" "gradient")]
+    (if (= theme "base")
+      (write-theme-json theme "theme/monotropic.json")
+      (write-theme-json theme (str "theme/monotropic-" theme ".json")))))
