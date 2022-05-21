@@ -5,6 +5,7 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    continue-on-error: true
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
     steps:
