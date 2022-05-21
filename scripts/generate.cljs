@@ -1,4 +1,4 @@
-(ns generate
+(ns scripts.generate
   (:require ["fs" :as fs]
             ["js-yaml" :refer [DEFAULT_SCHEMA load Type]]))
 
@@ -49,5 +49,3 @@
       (if (= theme "base")
         (write-theme-json theme "theme/monotropic.json")
         (write-theme-json theme (str "theme/monotropic-" theme ".json"))))))
-
-(-main)
