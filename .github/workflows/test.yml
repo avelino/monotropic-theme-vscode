@@ -12,4 +12,5 @@ jobs:
           node-version: lts/*
           cache: npm
       - run: npm install
+      - run: nbb -m test.generate
       - run: npm run package

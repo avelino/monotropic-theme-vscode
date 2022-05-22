@@ -43,7 +43,7 @@
 
 (defn -main
   "Software starting point"
-  [& args]
+  []
   (doseq [theme (list "base" "coffee" "gradient")]
     (if (= theme "base")
       (write-theme-json theme "theme/monotropic.json")
