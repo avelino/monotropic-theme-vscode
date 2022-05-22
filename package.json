@@ -9,6 +9,7 @@
     "scripts": {
         "build": "nbb -m scripts.generate",
         "package": "mkdir -p bin && vsce package -o ./bin/monotropic.vsix",
+        "test": "nbb -m test.generate",
         "vscode:prepublish": "nbb -m scripts.generate",
         "vsce-publish": "vsce publish"
     },
