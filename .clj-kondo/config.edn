@@ -1,4 +1,4 @@
 {:linters
  {:unresolved-symbol
-  {:exclude [(fs/writeFileSync)]}}
+  {:exclude [(fs.writeFileSync)]}}
  :ignore [:redundant-do]}
