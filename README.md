@@ -22,6 +22,10 @@
 
 _Font used in screenshots is [Cascadia Code](https://github.com/microsoft/cascadia-code)_
 
+## Slack Theme
+
+**Coffee:** `#FFFFFA,#F8F8FA,#745B4B,#FFFFFA,#FFFFFA,#593E2C,#AA998E,#8F796C,#E2DCD8,#593E2C`
+
 ## Color Palette
 
 ## Monotropic (default)
