@@ -17,7 +17,8 @@
         "Thiago Avelino <avelinorun@gmail.com>"
     ],
     "contributors": [
-        "Rodrigo Franco"
+        "Rodrigo Franco",
+        "Leo Aparisi de Lannoy"
     ],
     "repository": {
         "type": "git",
@@ -45,7 +46,8 @@
         "theme": "light"
     },
     "contributes": {
-        "themes": [{
+        "themes": [
+            {
                 "label": "monotropic",
                 "uiTheme": "vs",
                 "path": "./theme/monotropic.json"
@@ -64,9 +66,9 @@
     },
     "devDependencies": {
         "js-yaml": "^4.1.0",
-        "prettier": "^2.6.2",
-        "tinycolor2": "^1.4.2",
-        "vsce": "^2.7.0"
+        "prettier": "^2.8.8",
+        "tinycolor2": "^1.6.0",
+        "@vscode/vsce": "^2.19.0"
     },
     "__metadata": {
         "id": "e9a92eb4-ebc4-455e-9a80-a9666d03ee86",
@@ -74,6 +76,6 @@
         "publisherId": "6c7da285-e398-41d7-a76c-9e13c3c5e16e"
     },
     "dependencies": {
-        "nbb": "^0.5.103"
+        "nbb": "^1.2.174"
     }
 }
